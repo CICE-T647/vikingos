@@ -66,6 +66,14 @@ class War {
     }
 
     vikingAttack () {
-        this.saxon.health - viking.strength
+        this.saxonArmy[0].health = this.saxonArmy[0].health - this.vikingArmy[0].strength
+        
+        if(this.saxonArmy[0].health <= 0){
+            this.saxonArmy.pop( );
+            return `A Saxon has died in combat`
+        }
+    }
+    saxonAttack () {
+        
     }
 }
